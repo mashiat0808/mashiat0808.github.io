@@ -16,10 +16,12 @@ redirect_from:
 
 🎓 I'm passionate about advancing the field of AI through rigorous software engineering practices and methodologies.
 
+---
+
 ## 📰 News & Updates
 
 * **Spring 2026**: Started the Spring 2026 semester at UT Dallas.
-* *Add your recent updates here (e.g., "Paper accepted to [Conference Name]")*
+* My paper titled "Mapping Decentralized Autonomous Organization Governance Across Chains: An Updated, Multi-Platform Dataset" got accepted to MSR Data and Tool Track 2026!*
 
 
 
