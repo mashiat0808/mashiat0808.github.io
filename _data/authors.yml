@@ -1,18 +1,11 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Mashiat Amin Farin:
+  name        : "Mashiat Amin Farin"
+  uri         : "https://mashiat0808.github.io"
+  email       : "mashiatamin.farin@utdallas.edu"
+  bio         : "First year Software Engineering PhD student at University of Texas at Dallas. Studying Software engineering for AI under Dr. Bhavani Thuraisingham"
+  avatar      : "Profile_pic2.png"
+  github      : "mashiat0808"
+  linkedin    : "mashiataminfarin"
+  googlescholar : "https://scholar.google.com/citations?user=aAbjRNMAAAAJ&hl=en"
