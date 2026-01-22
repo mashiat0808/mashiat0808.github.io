@@ -29,6 +29,8 @@
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.collection == 'publications' and post.paperurl %}
         <a href="{{ post.paperurl }}" target="_blank" style="color: inherit; text-decoration: none;">{{ title }}</a>
+      {% elsif post.collection == 'publications' and post.status == 'accepted' and post.doi %}
+        <a href="https://doi.org/{{ post.doi }}" target="_blank" style="color: inherit; text-decoration: none;">{{ title }}</a>
       {% elsif post.collection == 'publications' %}
         {{ title }}
       {% elsif post.link %}
