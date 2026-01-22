@@ -9,4 +9,5 @@ authors: 'Mashiat Amin Farin, Samer Hassan, Javier Arroyo'
 citation: 'Mashiat Amin Farin, Samer Hassan, Javier Arroyo. "Mapping Decentralized Autonomous Organization Governance Across Chains: An Updated, Multi-Platform Dataset." MSR Data and Tool Track, 2026.'
 paperurl: 
 doi: 
+share: false
 ---
