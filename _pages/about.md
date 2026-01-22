@@ -21,7 +21,8 @@ redirect_from:
 ## 📰 News & Updates
 
 * **Spring 2026**: Started the Spring 2026 semester at UT Dallas.
-* My paper titled "Mapping Decentralized Autonomous Organization Governance Across Chains: An Updated, Multi-Platform Dataset" got accepted to MSR Data and Tool Track 2026!*
+* My paper titled "Mapping Decentralized Autonomous Organization Governance Across Chains: An Updated, Multi-Platform Dataset" got accepted to MSR Data and Tool Track 2026!
+** *Fall 2025**: Started the Fall 2025 semester at UT Dallas.
 
 
 
