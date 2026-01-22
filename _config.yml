@@ -82,7 +82,10 @@ analytics:
 author:
   name             : "Mashiat Amin Farin"
   avatar           : "Profile_pic2.jpeg"
-  bio              : "PhD Student, Software Engineering\nUniversity of Texas at Dallas\nResearch: Software Engineering for AI"
+  bio              : |
+    PhD Student, Software Engineering
+    University of Texas at Dallas
+    Research: Software Engineering for AI
   location         : "Dallas, Texas, USA"
   employer         : "University of Texas at Dallas"
   pubmed           : 
