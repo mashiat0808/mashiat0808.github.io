@@ -43,6 +43,9 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
+          {% if post.type == 'dataset' %}
+            <span style="display: inline-block; padding: 0.2em 0.6em; margin-right: 0.5em; background-color: #9C27B0; color: white; border-radius: 3px; font-size: 0.75em; font-weight: 600; text-transform: uppercase;">Dataset</span>
+          {% endif %}
           {% if post.authors %}
             {% assign author_name = site.author.name %}
             {% assign authors_list = post.authors | split: ', ' %}

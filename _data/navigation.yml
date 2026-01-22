@@ -10,6 +10,12 @@ main:
   - title: "Publications"
     url: /publications/
     # url: https://scholar.google.es/citations?user=xxxxxxxx=en
+
+  - title: "TA Experience"
+    url: /ta/
+
+  - title: "Internships"
+    url: /internships/
         
   # - title: "Blog Posts"
   #   url: /year-archive/
