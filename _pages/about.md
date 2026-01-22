@@ -8,7 +8,12 @@ redirect_from:
   - /about.html
 ---
 
+## 📰 News & Updates
 
+* **Spring 2026**: Started the Spring 2026 semester at UT Dallas.
+* *Add your recent updates here (e.g., "Paper accepted to [Conference Name]")*
+
+---
 
 👨🏻‍💻 I'm a first year Software Engineering PhD student at the University of Texas at Dallas.
 
