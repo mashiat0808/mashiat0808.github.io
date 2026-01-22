@@ -7,7 +7,7 @@ date: 2025-05-01
 venue: '2025 IEEE/ACM 7th International Workshop on Emerging Trends in Software Engineering for Blockchain (WETSEB)'
 authors: 'Mashiat Amin Farin, Sampad Sikder, Ashabul Yamin Raad, Meah Tahmeed Ahmed, Tahlil Tahlil'
 citation: 'Mashiat Amin Farin, Sampad Sikder, Ashabul Yamin Raad, Meah Tahmeed Ahmed, Tahlil Tahlil. "HealthChain: A Blockchain-Based Framework for Electronic Health Record Management System." 2025 IEEE/ACM 7th International Workshop on Emerging Trends in Software Engineering for Blockchain (WETSEB), 2025.'
-paperurl: 
+paperurl: '10.1109/WETSEB66605.2025.00010'
 doi: '10.1109/WETSEB66605.2025.00010'
 share: false
 ---
