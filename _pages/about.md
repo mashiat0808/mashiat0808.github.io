@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-👨🏻‍💻 I'm a first year Software Engineering PhD student at the University of Texas at Dallas.
+I'm a first year Software Engineering PhD student at the University of Texas at Dallas.
 
-🔬 My research focuses on Software Engineering for AI under the supervision of Dr. Bhavani Thuraisingham.
+My research focuses on Software Engineering for AI under the supervision of Dr. Bhavani Thuraisingham.
 
-📚 I completed my undergraduate degree in Software Engineering at the Institute of Information Technology, University of Dhaka.
+I completed my undergraduate degree in Software Engineering at the Institute of Information Technology, University of Dhaka.
 
-🎓 I'm passionate about advancing the field of AI through rigorous software engineering practices and methodologies.
+I'm passionate about advancing the field of AI through rigorous software engineering practices and methodologies.
 
 ---
 

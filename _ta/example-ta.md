@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Teaching Assistant - Course Name"
 collection: ta
 permalink: /ta/example-ta
@@ -11,4 +11,4 @@ Description of your TA experience here. You can include:
 - Course details
 - Responsibilities
 - What you learned
-- Any notable achievements
+- Any notable achievements -->
