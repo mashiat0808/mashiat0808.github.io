@@ -20,6 +20,8 @@ I'm passionate about advancing the field of AI through rigorous software enginee
 
 ## 📰 News & Updates
 
+* My paper titled "A Four-Axis Systematization of AI and Cybersecurity in the Era of Large Language Models" got accepted to IEEE BigDataSecurity 2026!
+
 * **Spring 2026**: Started the Spring 2026 semester at UT Dallas.
 
 * My paper titled "Mapping Decentralized Autonomous Organization Governance Across Chains: An Updated, Multi-Platform Dataset" got accepted to MSR Data and Tool Track 2026!
