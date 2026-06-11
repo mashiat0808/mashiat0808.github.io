@@ -49,20 +49,29 @@
 }
 
 .archive__item {
-  background-color: #fff;
-  border: 1px solid $border-color;
+  display: block;
+  background-color: #fbfbfc;
+  border: 1px solid rgba(#000, 0.08);
   border-radius: $border-radius;
-  padding: 1.5em;
-  margin-bottom: 1.5em;
-  box-shadow: 0 2px 8px rgba(#000, 0.04);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 1.25em 1.5em;
+  margin: 0 0 1.25em;
+  box-shadow: 0 2px 16px rgba(#000, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 
-  p {
-    margin: 0 0 0.9em;
+  a {
+    color: inherit;
+  }
+
+  p,
+  .page__meta,
+  .archive__item-excerpt,
+  .archive__item-date {
+    margin: 0 0 0.75em;
   }
 
   .archive__item-title {
     margin-top: 0;
+    margin-bottom: 0.5em;
   }
 
   .publication-dataset-badge {
@@ -137,7 +146,8 @@
 
 .archive__item:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(#000, 0.08);
+  border-color: rgba(#000, 0.16);
+  box-shadow: 0 12px 34px rgba(#000, 0.14);
 
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
@@ -146,6 +156,10 @@
   .archive__item-title {
     text-decoration: underline;
   }
+}
+
+.list__item {
+  margin-bottom: 0;
 }
 
 
