@@ -7,7 +7,7 @@ date: 2026-03-18
 venue: '2026 IEEE BigDataSecurity'
 authors: 'Mashiat Amin Farin, Bhavani Thuraisingham'
 citation: 'Mashiat Amin Farin, Bhavani Thuraisingham. "A Four-Axis Systematization of AI and Cybersecurity in the Era of Large Language Models" 2026 IEEE BigDataSecurity, 2026.'
-paperurl: 
+paperurl: '/files/A_Four_Axis_Systematization_of_AI_and_Cybersecurity_in_the_Era_of_Large_Language_Models.pdf'
 doi: 
 share: false
 ---
