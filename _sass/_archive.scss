@@ -40,11 +40,33 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
   font-family: $sans-serif-narrow;
 
   a + a {
     opacity: 0.5;
+  }
+}
+
+.archive__item {
+  background-color: #fff;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 8px rgba(#000, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  p {
+    margin: 0 0 0.9em;
+  }
+
+  .archive__item-title {
+    margin-top: 0;
+  }
+
+  .publication-dataset-badge {
+    margin-left: 0.65em;
   }
 }
 
@@ -114,6 +136,9 @@
 }
 
 .archive__item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(#000, 0.08);
+
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
   }
