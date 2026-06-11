@@ -74,6 +74,36 @@
   }
 }
 
+.publication-intro {
+  margin-bottom: 1.5em;
+}
+
+.publication-status-label {
+  display: inline-block;
+  margin: 1.5em 0 0.5em 0;
+  padding: 0.35em 0.9em;
+  border-radius: $border-radius;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.publication-status-label--accepted {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.publication-status-label--published {
+  background-color: #2196F3;
+  color: white;
+}
+
+.publication-status-label--under-review {
+  background-color: #FF9800;
+  color: #000;
+}
+
 .archive__item:hover {
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
