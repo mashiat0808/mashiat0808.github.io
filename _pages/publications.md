@@ -24,10 +24,3 @@ author_profile: true
 {% for post in published_pubs %}
   {% include archive-single.html %}
 {% endfor %}
-
-<h2 class="publication-status-label publication-status-label--under-review">Under Review</h2>
-
-{% assign review_pubs = site.publications | where: "status", "under-review" | sort: "date" | reverse %}
-{% for post in review_pubs %}
-  {% include archive-single.html %}
-{% endfor %}

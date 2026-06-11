@@ -26,13 +26,14 @@
       </div>
     {% endif %}
 
-    {% if post.collection == 'publications' and post.type == 'dataset' %}
-      <span style="display: inline-block; padding: 0.2em 0.6em; margin-bottom: 0.5em; background-color: #9C27B0; color: white; border-radius: 3px; font-size: 0.75em; font-weight: 600; text-transform: uppercase;">Dataset</span>
-    {% endif %}
-    
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.collection == 'publications' %}
         {{ title }}
+        {% if post.type == 'dataset' and post.paperurl %}
+          <a class="publication-dataset-badge" href="{{ post.paperurl }}" target="_blank" rel="noopener">Dataset</a>
+        {% elsif post.type == 'dataset' %}
+          <span class="publication-dataset-badge">Dataset</span>
+        {% endif %}
       {% elsif post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
