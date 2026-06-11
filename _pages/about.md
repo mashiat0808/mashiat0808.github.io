@@ -20,6 +20,13 @@ I'm passionate about advancing the field of AI through rigorous software enginee
 
 ## 📰 News & Updates
 
+
+* Selected to attend the 1st Summer School on the Security and Governance of Collective Digital Infrastructures (SGCDI) at the Max Planck Institute for Security and Privacy, Bochum, Germany (July 14–16, 2026)! 
+
+* Summer 2026: Spending the summer in California. Very excited to explore Cali!
+
+
+
 * My paper titled "A Four-Axis Systematization of AI and Cybersecurity in the Era of Large Language Models" got accepted to IEEE BigDataSecurity 2026!
 
 * **Spring 2026**: Started the Spring 2026 semester at UT Dallas.
