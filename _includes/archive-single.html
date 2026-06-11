@@ -29,9 +29,9 @@
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.collection == 'publications' %}
         {{ title }}
-        {% if post.type == 'dataset' and post.paperurl %}
+        {% if post.type == 'dataset' and post.dataset_badge != false and post.paperurl %}
           <a class="publication-dataset-badge" href="{{ post.paperurl }}" target="_blank" rel="noopener">Dataset</a>
-        {% elsif post.type == 'dataset' %}
+        {% elsif post.type == 'dataset' and post.dataset_badge != false %}
           <span class="publication-dataset-badge">Dataset</span>
         {% endif %}
       {% elsif post.link %}
