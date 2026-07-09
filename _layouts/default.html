@@ -7,7 +7,7 @@
     {% if page.page_css %}
     <link rel="stylesheet" href="/css/{{ page.page_css }}.css" />
     {% endif %}
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.jpeg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -47,7 +47,7 @@
       <div class="navbar-title">
         <a class="navbar-title-link" href="/">
           <img
-            src="/assets/images/favicon.png"
+            src="/assets/images/favicon.jpeg"
             class="navbar-logo-icon"
             alt="Mashiat Amin Farin"
           />
@@ -72,7 +72,6 @@
       <a href="/html/project.html" {% if page.active == "project" %} class="active" {% endif %}>Projects</a>
       <a href="/html/skill.html" {% if page.active == "skill" %} class="active" {% endif %}>Skills</a>
       <a href="/html/extracurricular.html" {% if page.active == "extracurricular" %} class="active" {% endif %}>Service</a>
-      <a href="/html/blog.html" {% if page.active == "blog" %} class="active" {% endif %}>Blog</a>
     </div>
 
     <!-- Layout -->
@@ -84,7 +83,7 @@
           <div class="sidebar-name-row">
             <a class="sidebar-title-link" href="/">
               <img
-                src="/assets/images/favicon.png"
+                src="/assets/images/favicon.jpeg"
                 class="sidebar-avatar-icon"
                 alt="Mashiat Amin Farin"
               />
@@ -125,9 +124,7 @@
             <a href="/html/extracurricular.html" {% if page.active == "extracurricular" %} class="active" {% endif %}>
               <i class="fas fa-handshake fa-fw" style="color: #f778ba"></i> Service
             </a>
-            <a href="/html/blog.html" {% if page.active == "blog" %} class="active" {% endif %}>
-              <i class="fas fa-pen-nib fa-fw" style="color: #e2b96f"></i> Blog
-            </a>
+
           </nav>
         </div>
 
@@ -169,6 +166,14 @@
             >
               <i class="fa-brands fa-linkedin fa-fw" style="color: #0a66c2"></i>
               LinkedIn
+            </a>
+            <a
+              href="https://scholar.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-google-scholar fa-fw" style="color: #4285f4"></i>
+              Google Scholar
             </a>
             <a
               href="https://utdallas.edu/"
@@ -232,6 +237,14 @@
                 aria-label="LinkedIn"
               >
                 <i class="fa-brands fa-linkedin" style="color: #0a66c2"></i>
+              </a>
+              <a
+                href="https://scholar.google.com/citations?user=aAbjRNMAAAAJ&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Google Scholar"
+              >
+                <i class="fa-brands fa-google-scholar" style="color: #4285f4"></i>
               </a>
               <a
                 href="https://utdallas.edu/"
