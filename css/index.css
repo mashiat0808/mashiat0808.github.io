@@ -1,0 +1,159 @@
+/* ─── Hero ──────────────────────────────────────────── */
+
+.hero-index {
+  margin-bottom: 0.5rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.hero-image {
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid var(--color-border);
+  display: block;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-wrapper h1 {
+  margin: 0;
+}
+
+.hero-description {
+  font-size: 1.05rem;
+  color: var(--color-text);
+  line-height: 1.5;
+  margin: 0;
+  text-align: justify;
+}
+
+.hero-description strong {
+  color: var(--color-text-emphasized);
+  font-weight: 600;
+}
+
+/* ─── About body ────────────────────────────────────── */
+
+.about-para {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text);
+  margin: 0 0 0.35rem;
+  text-align: justify;
+}
+
+.about-para strong {
+  color: var(--color-text-emphasized);
+  font-weight: 600;
+}
+
+.about-section-heading {
+  font-family: var(--font-family);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.3rem;
+  margin: 2.5rem 0 0.5rem;
+}
+
+/* ─── Responsive hero ───────────────────────────────── */
+
+@media screen and (min-width: 600px) {
+  .hero-container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+
+  .hero-image-container {
+    flex-shrink: 0;
+  }
+
+  .hero-image {
+    width: 160px;
+    height: 160px;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hero-index {
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-description {
+    font-size: 1.15rem;
+  }
+}
+
+/* ─── Education list (inlined from education page) ──── */
+
+.education-list {
+  padding: 0;
+  margin: 0;
+}
+
+.education-list li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--color-border);
+  list-style: none;
+}
+.education-list li:first-child { padding-top: 0; }
+
+.education-place {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.education-place p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+.education-place a {
+  color: var(--color-text-muted);
+  text-decoration: underline dotted var(--color-border);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.education-place a:hover {
+  color: var(--color-primary);
+  text-decoration-color: var(--color-primary);
+}
+
+.education-grade {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: justify;
+}

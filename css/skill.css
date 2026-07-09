@@ -1,0 +1,109 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-emphasized);
+  margin-top: 0.2rem;
+  display: block;
+  text-decoration: none;
+}
+a.skill-heading {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--color-border);
+  text-underline-offset: 4px;
+}
+a.skill-heading:hover {
+  text-decoration-color: var(--color-primary);
+}
+
+.skill-subtitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin: 0.75rem 0 0.4rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.skill-organization {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.15rem;
+}
+.skill-organization a {
+  font-size: inherit;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.skill-organization a:hover { text-decoration: underline; }
+
+.skill-icons {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--color-background-card);
+  border: 1px solid var(--color-border-card);
+  color: var(--color-text);
+  margin: 0.15rem 0.15rem 0.15rem 0;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.skill-tag:hover {
+  background: var(--color-background-link-hover);
+  border-color: var(--color-text-muted);
+  color: var(--color-text-muted);
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+}
+
+@media (max-width: 640px) {
+  .cert-grid { grid-template-columns: 1fr; }
+}
+
+.skill-cert-item {
+  border: 2px solid var(--color-border-card);
+  border-radius: var(--border-radius);
+  padding: 0.85rem 1rem;
+  background: var(--color-background-card);
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-subheading {
+  margin-top: 0.3rem;
+}
+.skill-subheading p {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  margin: 0;
+  text-align: justify;
+}
+.skill-subheading strong {
+  font-size: inherit;
+  font-weight: 700;
+  color: var(--color-text-emphasized);
+}

@@ -1,31 +1,279 @@
----
-layout: compress
----
-
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+<html lang="en">
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    {% if page.page_css %}
+    <link rel="stylesheet" href="/css/{{ page.page_css }}.css" />
+    {% endif %}
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ahmed Ryan</title>
+    <script>
+      (function () {
+        var s = localStorage.getItem("colorScheme");
+        if (s) document.documentElement.style.colorScheme = s;
+      })();
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BH8V4Y4GWW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-BH8V4Y4GWW");
+    </script>
+    <script
+      data-goatcounter="https://fraxhost.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
   </head>
-
   <body>
+    <!-- Mobile navbar (hidden ≥ 1020px) -->
+    <nav class="navbar">
+      <div class="navbar-title">
+        <a class="navbar-title-link" href="/">
+          <img
+            src="/assets/images/favicon.png"
+            class="navbar-logo-icon"
+            alt="Ahmed Ryan"
+          />
+          Ahmed Ryan
+        </a>
+      </div>
+      <div class="navbar-right">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="icon-btn" id="nav-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
+    <!-- Mobile nav dropdown -->
+    <div class="navbar-menu" id="navbar-menu">
+      <a href="/" {% if page.active == "about" %} class="active" {% endif %}>About Me</a>
+      <a href="/html/experience.html" {% if page.active == "experience" %} class="active" {% endif %}>Experience</a>
+      <a href="/html/publication.html" {% if page.active == "publication" %} class="active" {% endif %}>Publications</a>
+      <a href="/html/project.html" {% if page.active == "project" %} class="active" {% endif %}>Projects</a>
+      <a href="/html/skill.html" {% if page.active == "skill" %} class="active" {% endif %}>Skills</a>
+      <a href="/html/extracurricular.html" {% if page.active == "extracurricular" %} class="active" {% endif %}>Service</a>
+      <a href="/html/blog.html" {% if page.active == "blog" %} class="active" {% endif %}>Blog</a>
     </div>
 
-    {% include scripts.html %}
+    <!-- Layout -->
+    <div class="layout">
+      <!-- Desktop sidebar (shown ≥ 1020px) -->
+      <aside class="sidebar">
+        <!-- Name + icon + theme toggle -->
+        <div class="sidebar-section">
+          <div class="sidebar-name-row">
+            <a class="sidebar-title-link" href="/">
+              <img
+                src="/assets/images/favicon.png"
+                class="sidebar-avatar-icon"
+                alt="Ahmed Ryan"
+              />
+              <span class="site-name">Ahmed Ryan</span>
+            </a>
+            <button
+              class="icon-btn"
+              id="theme-toggle-sidebar"
+              aria-label="Toggle theme"
+            >
+              <i class="fas fa-moon" id="theme-icon-sidebar"></i>
+            </button>
+          </div>
+          <p class="sidebar-bio">
+            Graduate Research Assistant, University of Alabama
+          </p>
+        </div>
 
+        <!-- Navigation -->
+        <div class="sidebar-section">
+          <h2>Navigation</h2>
+          <nav class="sidebar-nav-links">
+            <a href="/" {% if page.active == "about" %} class="active" {% endif %}>
+              <i class="fas fa-user fa-fw" style="color: #58a6ff"></i> About Me
+            </a>
+            <a href="/html/experience.html" {% if page.active == "experience" %} class="active" {% endif %}>
+              <i class="fas fa-briefcase fa-fw" style="color: #d2a8ff"></i> Experience
+            </a>
+            <a href="/html/publication.html" {% if page.active == "publication" %} class="active" {% endif %}>
+              <i class="fas fa-file-alt fa-fw" style="color: #ffa657"></i> Publications
+            </a>
+            <a href="/html/project.html" {% if page.active == "project" %} class="active" {% endif %}>
+              <i class="fas fa-laptop fa-fw" style="color: #3fb950"></i> Projects
+            </a>
+            <a href="/html/skill.html" {% if page.active == "skill" %} class="active" {% endif %}>
+              <i class="fas fa-code fa-fw" style="color: #79c0ff"></i> Skills
+            </a>
+            <a href="/html/extracurricular.html" {% if page.active == "extracurricular" %} class="active" {% endif %}>
+              <i class="fas fa-handshake fa-fw" style="color: #f778ba"></i> Service
+            </a>
+            <a href="/html/blog.html" {% if page.active == "blog" %} class="active" {% endif %}>
+              <i class="fas fa-pen-nib fa-fw" style="color: #e2b96f"></i> Blog
+            </a>
+          </nav>
+        </div>
+
+        <!-- Research areas -->
+        <div class="sidebar-section">
+          <h2>Research Areas</h2>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">Supply Chain</span>
+            <span class="sidebar-tag">Threat Intelligence</span>
+            <span class="sidebar-tag">Malware Analysis</span>
+            <span class="sidebar-tag">ML in Security</span>
+          </div>
+        </div>
+
+        <!-- Connect -->
+        <div class="sidebar-section">
+          <h2>Connect</h2>
+          <div class="sidebar-links">
+            <a href="mailto:aryan9@crimson.ua.edu">
+              <i class="fas fa-envelope fa-fw" style="color: #ea4335"></i>
+              aryan9@crimson.ua.edu
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=eMGmbKUAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-google-scholar fa-fw" style="color: #4285f4"></i>
+              Google Scholar
+            </a>
+            <a
+              href="https://github.com/fraxhost"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                class="fa-brands fa-github fa-fw"
+                style="color: light-dark(#24292f, #e6edf3)"
+              ></i>
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/fraxhost/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin fa-fw" style="color: #0a66c2"></i>
+              LinkedIn
+            </a>
+            <a
+              href="https://cs.ua.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-university fa-fw" style="color: #9e1b32"></i> UA
+              CS Dept.
+            </a>
+          </div>
+        </div>
+        <!-- Page view counter -->
+        <div class="sidebar-views">
+          <i class="fas fa-eye fa-fw sidebar-views-icon"></i>
+          <span id="gc-count" class="sidebar-views-count">—</span>
+          <span class="sidebar-views-label">views</span>
+        </div>
+        <script>
+          fetch(
+            "https://fraxhost.goatcounter.com/counter/" +
+              encodeURIComponent(location.pathname) +
+              ".json",
+          )
+            .then(function (r) {
+              return r.json();
+            })
+            .then(function (d) {
+              document.getElementById("gc-count").textContent = d.count;
+            })
+            .catch(function () {});
+        </script>
+      </aside>
+
+      <!-- Main wrapper -->
+      <div class="main-wrapper">
+        <main>
+          <div class="main-content">{{ content }}</div>
+        </main>
+
+        <footer class="footer">
+          <div class="footer-inner">
+            <span class="footer-copy">Ahmed Ryan &copy; 2025</span>
+            <div class="footer-links">
+              <a href="mailto:aryan9@crimson.ua.edu" aria-label="Email">
+                <i class="fas fa-envelope" style="color: #ea4335"></i>
+              </a>
+              <a
+                href="https://scholar.google.com/citations?user=eMGmbKUAAAAJ&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Google Scholar"
+              >
+                <i class="fa-brands fa-google-scholar" style="color: #4285f4"></i>
+              </a>
+              <a
+                href="https://github.com/fraxhost"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i
+                  class="fa-brands fa-github"
+                  style="color: light-dark(#24292f, #e6edf3)"
+                ></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/fraxhost/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin" style="color: #0a66c2"></i>
+              </a>
+              <a
+                href="https://cs.ua.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="University of Alabama"
+              >
+                <i class="fas fa-graduation-cap" style="color: #9e1b32"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- /.layout -->
+
+    <!-- Scroll-to-top -->
+    <button
+      class="scroll-btn"
+      id="scroll-btn"
+      onclick="scrollToTop()"
+      aria-label="Scroll to top"
+    >
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>
